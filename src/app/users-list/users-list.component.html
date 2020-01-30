@@ -1,0 +1,15 @@
+<div class="search-container container">
+    <mat-form-field class="search-bar">
+        <input matInput placeholder="Search user" [formControl]="search">
+    </mat-form-field>
+</div>
+<div class="users-list container" *ngFor="let user of dataSource">
+    <img [src]="user.avatar_url" width=50px height=50px class="avatar">
+    <span> {{ user.login| titlecase }}</span>
+    <img src="https://img.icons8.com/ultraviolet/40/000000/menu-2.png" class="option" [matMenuTriggerFor]="menu">
+  <mat-menu #menu="matMenu">
+    <div *ngFor="let option of options">
+    <button mat-menu-item (click)="onOptionClick(option.id, user.login)">{{option.name}}</button>
+    </div>
+  </mat-menu>
+</div>

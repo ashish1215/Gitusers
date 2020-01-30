@@ -22,6 +22,23 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+
+## Additional Dependencies used
+
+Angular Material - ng add @angular/material
+Bootstrap 4.X
+
+
+## Git hub Authorization
+
+Git hub Authorization is needed if requests exceed more than 60 per hour. To authorize use following command
+
+
+Run 'curl -u "username" https://api.github.com'
+
+Enter your password.
+
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

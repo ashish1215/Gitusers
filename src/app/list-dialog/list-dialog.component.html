@@ -1,0 +1,7 @@
+<div>
+    <h3>{{"Repositories"}}</h3>
+    <div *ngFor="let repo of repoData" class="repo-view">
+        <div> {{repo.name}}</div>
+        <a [href]="repo.url" target="_blank">{{repo.url}}</a>
+    </div>
+</div>
